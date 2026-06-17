@@ -1,0 +1,17 @@
+CREATE TABLE cursos (
+idCursos INT PRIMARY KEY IDENTITY(1,1),
+titulo VARCHAR(50) NOT NULL,
+descricao TEXT NOT NULL,
+area VARCHAR(150) NOT NULL,
+publicoAlvo VARCHAR(150) NOT NULL,
+cargaHoraria VARCHAR(30) NOT NULL,
+preRequisito VARCHAR(70) NOT NULL,
+horarioDisponivel VARCHAR(100) NOT NULL,
+tipoCurso VARCHAR(20) NOT NULL,
+vagas INT,
+certificado TINYINT DEFAULT 0,
+investimento FLOAT NOT NULL,
+youtube VARCHAR(255) NOT NULL,
+ativo TINYINT DEFAULT 1, 
+dataDeCadastro DATETIME DEFAULT GETDATE(),
+);

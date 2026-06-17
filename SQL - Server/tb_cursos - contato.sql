@@ -1,0 +1,10 @@
+CREATE TABLE contato (
+id INT PRIMARY KEY,
+nome VARCHAR NOT NULL,
+email VARCHAR NOT NULL,
+telefone VARCHAR NULL,
+assunto VARCHAR NOT NULL,
+mensagem VARCHAR NOT NULL,
+idCurso INT NULL,
+dataDeCadastro DATETIME,
+);

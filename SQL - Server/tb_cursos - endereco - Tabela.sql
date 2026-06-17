@@ -1,0 +1,13 @@
+CREATE TABLE endereco (
+ idEndereco INT PRIMARY KEY IDENTITY(1,1),
+ endereco VARCHAR(255) NOT NULL,
+ numero VARCHAR(10) NOT NULL,
+ complemento VARCHAR(20) NULL,
+ bairro VARCHAR(255) NOT NULL,
+ cidade VARCHAR(255) NOT NULL,
+ estado VARCHAR(50) NOT NULL,
+ pais VARCHAR(50) NOT NULL,
+ idCliente INT NOT NULL,
+ ativo TINYINT DEFAULT 1,
+ dataDeCadastro DATETIME DEFAULT GETDATE(),
+ );

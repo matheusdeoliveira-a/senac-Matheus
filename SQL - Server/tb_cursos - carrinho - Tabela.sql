@@ -1,0 +1,9 @@
+CREATE TABLE carrinho (
+idCarrinho INT PRIMARY KEY IDENTITY(1,1),
+idCliente INT NOT NULL,
+idCursos INT NOT NULL,
+quantidade INT NOT NULL,
+valorTotal FLOAT NOT NULL,
+dataDeCadastro DATETIME DEFAULT GETDATE(),
+ativo TINYINT DEFAULT 1,
+);
