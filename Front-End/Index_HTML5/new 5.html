@@ -1,0 +1,35 @@
+<!docty html><html><head>
+<meta charset="utf-8">
+<title>IF Sorteio - Lógica de Programação com JavaScript</title>
+</head><body>
+<h1>IF Sorteio - Lógica de Programação com JavaScript</h1>
+<script>
+//fazer o jogador1 digitar um número.
+numero1 = parseInt(prompt("jogador 1 digite um número"));
+//fazer o jogador2 digitar outro número.
+numero2 = parseInt(prompt("jogador 2 digite um número"));
+//se forem iguais, mostrar mensagem 'empate'
+if(numero1 == numero2){
+	alert("jogo empatado");
+} else {
+//sortear um número entre 0 e 1
+resultadoSorteio = parseInt(Math.random()*2);
+	alert(" o numero sorteado é: " + resultadoSorteio);
+//se o número sorteado for 0, ganha quem escolher o número MENOR
+if (resultadoSorteio == 0){
+	if (numero1 < numero2){
+	alert("Parabéns jogador 1 você é o vencedor! Seu número foi " + numero1);
+} else {
+	alert("Parabéns jogador 2 você é o vencedor! Seu número foi " + numero2);
+  };
+ };
+ //se o número sorteado for 1. Ganha quem escolhee o número MAIOR
+ if (resultadoSorteio == 1){
+	if(numero1 > numero2){
+	alert("Parabéns jogador 1 você é o vencedor! Seu número foi " + numero1);
+	} else {
+	alert("Parabéns jogador 2 você é o vencedor! Seu número foi " + numero2);
+	};
+ };
+ };
+ </script></body></html>

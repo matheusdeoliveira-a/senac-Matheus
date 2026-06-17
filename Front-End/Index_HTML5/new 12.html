@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Função - Lógica de Programação com JavaScript</title>
+</head><body>
+<h1>Função - Lógica de Programação com JavaScript</h1>
+<p>Função void não retorna nenhum valor, mas são úteis no reaprovamento de código.</p>
+<button onClick="somar()">+Somar</button>
+<button onClick="subtrair()">-Subtrair</button>
+<button onClick="multiplicar()">*Multiplicar</button>
+<button onClick="dividir()">/Dividir</button>
+<button onClick="limpar()">Limpar Calculdora</button>
+<div id="output"></div>
+<script>
+//perguntar o número e converter
+var n1 = parseFloat(prompt("Digite o número"));
+escreve();
+function escreve(){
+var output = document.querySelector("#output");
+output.innerHTML = n1;
+}
+function somar(){
+var n2 = parseFloat(prompt("Digite outro número"));
+n1 = n1 + n2;
+escreve();
+}
+function subtrair(){
+var n2 = parseFloat(prompt("Digite outro número"));
+n1 = n1 - n2;
+escreve();
+}
+function multiplicar(){
+var n2 = parseFloat(prompt("Digite outro número"));
+n1 = n1 * n2;
+escreve();
+}
+function dividir(){
+var n2 = parseFloat(prompt("Digite outro número"));
+n1 = n1 / n2;
+escreve()
+}
+function limpar(){
+var n2 = parseFloat(prompt("Digite outro número"));
+escreve();
+}
+</script>
+</body>
+</html>

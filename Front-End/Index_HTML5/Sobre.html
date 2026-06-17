@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Atividade Site teste</title>
+<style>
+body {
+    margin: 0px;
+}
+a {
+    text-decoration:none;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+.topo {
+    background-color: #009900;
+    height: 80px;
+    width: 100%;
+    text-align: end;
+}
+.topo span {
+    color: white;
+    font-size: 40px;
+    line-height: 73px;
+    padding-right: 22px;
+}
+.menu {
+    background-color: #caffc9;
+    height: 60px;
+    width: 100%;
+}
+.baixo {
+    background-color: #013300;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    position: fixed;
+}
+.devT {
+    color:greenyellow;
+}
+.meio {
+    float: inline-start;
+    width: 1080px;
+}
+.lateral {
+    width:250px;
+    /*border:1px solid;*/
+    height: 550px;
+    float: left;
+}
+.texto {
+    padding-top: 16px;
+}
+.dev {
+    color: aquamarine;
+}
+.menu ul {
+    list-style-type: none;
+    font-size: 28px;
+    display: inline-flex;
+   /* line-height: 3px; */
+    width: 880px;
+    cursor: pointer;
+}
+.menu ul li {
+    width: 176px;
+    text-align: center;
+    border-right: 1px solid;
+    margin-top: -25px;
+    padding: 10px;
+}
+.menu ul li:hover {
+    background-color: green;
+    color: white;
+}
+ 
+@media (max-width:756px) {
+.menu ul {
+display: none;
+width: 92%;
+background: #caffc9;
+}
+.menu ul li {
+    border-bottom: 1px solid;
+    height: 31px;
+    border-right: 0px;
+    margin-top: 0px;
+    width: 90%;
+}
+.menu ul li:hover > a {
+    color:white;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: green;
+}
+.menu ul li a:hover {
+    color: white;
+}
+.lateral {
+display: none;
+}
+#myLinks {
+    position: relative;
+}
+.meio {
+    width: 95%;
+    padding: 10px;
+}
+.topo {
+    text-align: center;
+}
+.fa {
+    display: block;
+    color: black;
+    font-size: 46px;
+}
+.icon {
+    text-decoration: none;
+}
+}
+@media (min-width:756px) { /* Desktop */
+.fa {
+    display: none;
+}
+}
+ 
+</style>
+</head>
+<body>
+    <div class="topo">
+        <span>Aprendendo HTML</span>
+    </div>
+        <div class="menu">
+            <ul id="myLinks">
+                <li><a href="Apostila de HTML - Aprendendo.html">Home</a></li>
+                <li><a href="Sobre.html">Quem Somos</a></li>
+                <li><a href="Produtos.html">Produtos</a></li>
+                <li><a href="Serviços.html">Serviço</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()" class="mobileMenu">
+                <i class="fa fa-bars"></i></a>
+        </div>
+    <div class="completa">
+    <div class="lateral"></div>
+        <div class="meio">
+            <h2>Apostila de HTML</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, modi cupiditate! Dolorum dolore earum itaque asperiores eum perferendis ullam officia cum, similique sit ipsa delectus dicta ea, debitis, ducimus impedit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vel, hic adipisci in quibusdam aspernatur repudiandae rem dignissimos qui culpa reiciendis enim debitis quis sed libero nulla voluptate id modi?</p>
+            <p>&nbsp;</p>
+            <p>Público Alvo:</p>
+            <ul>
+                <li>Qualquer pessoa que deseja aprender HTML;</li>
+                <li>Desenvolvedores que trabalham com HTML;</li>
+                <li>Professores ou instrutores que desejam usar essa apostila;</li>
+            </ul>
+            <p>&nbsp;</p>
+            <p>Pré-requisitos:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat excepturi dicta voluptate quos? Quaerat laborum explicabo corporis, doloribus nemo sint? Totam, maxime repellat vitae quia repudiandae ab facilis et.</p>
+        </div>  
+    <div class="lateral"></div>
+    </div>
+    <div class="baixo">
+        <div class="texto">
+            <span class="devT">Desenvolvido por </span><span class="dev">Rafael Okamoto</span><br>
+            <span class="devT">Todos os direitos reservados!</span>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>operadores - Lógica de Programação com JavaScript</title>
+</head><body>
+<h1>Operadores - Lógica de Programação com JavaScript
+</h1><h2>Operadores Aritméticos</h2>
+<p>Realizam as operações básicas de matemática</p>
++ Adição<br>- Subtração<br>* Multiplicação<br>/ Divisão<br>** Exponenciação<br>% Módulo (resto da divisão)<br>++ Incremento<br>++ Incremento soma 1<br>
+-- Decremento diminui 1<br><br>Exemplos:<br>
+<script>
+//Incremento a++;//Decremento b--;
+var a = 10;var b = 20;var c = a + b;a++;b--;
+document.write("Resultado:"+c+"<br>");
+console.log("VariavelA:"+a);console.log("VariavelB:"+b);
+document.write("VariavelA:"+a+"<br>");
+document.write("VariavelB:"+b+"<br>");
+ </script>Resultado:30<br>VariavelA:11<br>VariavelB:19<br>
+ 
+ <h2>Operadores de Atribuição</h2>
+ <p>Atribuem um valor do operando à esquerda baseado no valor do operado à direita</p>
+ = Atribuição<br>
+ += Atribuição de soma<br>
+ -= Atribuição de subtração<br>
+ /= Atribuição de divisão<br>
+ %= Atribuição de resto<br><br>
+ Exemplos:<br>
+ <script>
+ var a = 2; var b = 4;
+ a += b;
+ document.write(a+"<br>");
+ a -= b;
+ document.write(a+"<br>");
+ a *= b;
+ document.write(a+"<br>");
+ </script>6<br>2<br>8<br>
+ 
+ 
+<h2>Precedência de Operadores Aritméticos</h2>
+Parênteses<br>
+Exponenciação<br>
+Multiplicação<br>
+Divisão<br>
+Adição<br>
+Subtração<br>
+Obs.:Excessão à regra quando */ juntos, resolve o que vier primeiro.<br><br>
+Exemplos:<br>
+7 + 2 * 3=
+<script>
+var precedente = 7 + 2 * 3;
+document.write (precedente+"<br>");
+var precedente = (7 + 2) * 3;
+document.write (precedente+"<br>");
+var precedente = (7 + 2) * 3 / 2 + 6 - 8 + (1 + 1);
+document.write (precedente+"<br>");
+</script>13<br>27<br>13.5<br>
+
+<h2>Operadores de Comparação ou Relaionais</h2>
+<p>Compara dois valores e retorna um valor Boleano como verdadeiro(true) ou falso(false)</p>
+&gt; Maior que<br>
+&lt; Menor que<br>
+&gt;= Maior ou igual a<br>
+&lt;= Menor ou igual a<br>
+== Igual a<br>
+=== Igual a "valor e tipo"<br>
+!= Diferente de <br><br> 
+Em outras linguagens:<br><br>
+Exemplos:<br>
+10 == 10 
+var saldo (string) = 10<br>
+var conta (float) = 10<br>
+saldo === conta ? falso
+<script>
+document.write(10 == 10);
+</script>true
+
+<h2>Operadores Lógicos</h2>
+&amp;&amp; AND Operador recebe dois operandos e retorna verdadeiro somente se ambos os operandos forem verdadeiros.<br>
+|| Or Operador retorna verdadeiro se um dos dois operandos forem verdadeiros.<br>
+! NOT Operador de negação é um operário unitário, ou seja, opera sobre apenas um operando. Ele nega e inverte o valor lógico do operário.<br>
+Obs. Tecla PIpeline | ou Shift +\ ou ALT + 124
+
+<h2>Precedência de Operadores Lógicos</h2>
+! NOT<br>
+&amp;&amp; AND<br>
+|| OR<br>
+
+if ((x ==1) &amp;&amp; (y ==2)) { continue; } else {break;}<br>
+if ((x ==1) || (y ==)) { continue; } else {break;} <br>
+if (!x == false) { x == true; } else { break; } //Ativo de um cadastro
+
+<h2>Operando vírgula</h2>
+, Vírgula<br>A vírgula em JavaScript é usada para detonar "explodir ou separar" uma lista dd valores. Ela pode ser usada para declarar Variável Composto ou Vetor:<br>
+var x, y, z;<br>
+Para detonar elementos de uma lista:<br>
+var lista = [0, 1, 2, 3];<br><br>
+Exemplo:<br>
+<script>
+var lista = [10, 20, 30, 40, 50, 60];
+document.write(lista+"<br>");
+document.write(lista[0]+"<br>");
+document.write(lista[1]+"<br>");
+document.write(lista[2]+"<br>");
+document.write(lista[3]+"<br>");
+ var lista = [120, 220, 230, 240];
+</script>10,20,30,40,50,60<br>10<br>20<br>30<br>40<br>
+
+ 
+ </body></html>

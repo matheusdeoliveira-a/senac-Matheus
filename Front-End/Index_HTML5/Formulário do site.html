@@ -1,0 +1,39 @@
+<HTML><HEAD><TITLE>Formulário do site</TITLE></HEAD><BODY>
+<!-- Method = Método de envio das informações-->
+<!-- Post : "Camuflado", GET : "Vai junto com a URL" -->
+<FORM METHOD="POST" ACTION="https://copafaceto.com.br/senac/acao.php" > <!-- As variaveis vão para um arquivo e este arquivo pode fzer N coisas-->
+<INPUT TYPE="HIDDEN" NAME="MAILTO"
+VALUE="email@dominioproprio.com.br" /> <!-- As tag INPUT são exclusivas da tag FORM -->
+<INPUT TYPE="HIDDEN" NAME="SUBJECT" VALUE="Contato do site">
+<INPUT TYPE="HIDDEN" NAME="PAGETO"
+VALUE="http://sp.senac.br/obrigado.html">
+<!-- Name = Variavel de formulário -->
+Deixe seu nome:<INPUT TYPE="TEXT" Required NAME="Nome" SIZE=60><BR> <!-- Required é obrigatório -->
+Deixe seu e-mail:<INPUT TYPE="email" NAME="Email" SIZE=60 > <BR><!-- NAME basicamente colocamos "nome" nas variaveis -->
+Digite sua senha:<INPUT TYPE="PASSWORD" NAME="Senha" SIZE=10
+MAXLENGTH=6><BR><!-- MAXLENGHTH = máximo de caracteres.
+Cada TYPE tem sua caracteristicas, como a senha, o email que precisa ter pelo menos um @. Um nome que não pode ter numero-->
+Insira a data do seu nascimento
+<input type="date" name="dataNascimento"><br>
+Você gostou do site? <BR>
+<INPUT TYPE="RADIO" NAME="GOSTOU" VALUE="SIM" CHECKED> Sim <BR>
+<INPUT TYPE="RADIO" NAME="GOSTOU" VALUE="NÃO"> Não <BR>
+Quais os sites que você mais visita? <br>
+<INPUT TYPE="CHECKBOX" NAME="LINKS" VALUE="CADE" CHECKED>DUCKDUCKGO
+<INPUT TYPE="CHECKBOX" NAME="LINKS2" VALUE="YAHOO">Yahoo 
+<INPUT TYPE="CHECKBOX" NAME="LINKS3" VALUE="GOOGLE">Google 
+<INPUT TYPE="CHECKBOX" NAME="LINKS4" VALUE="ALTAVISTA">Alta Vista 
+<BR><!-- Comentário --> 
+Qual o esporte que você mais gosta?
+<!-- atributo multiplique para selecionar
+mais de uma opção-->
+<SELECT NAME="OPCOES"  >
+<OPTION VALUE="NATACAO">Natação</OPTION><!-- Vem selecionada por padrão, tag select com varias opções,você pode muda-lá-->
+<OPTION VALUE="FUTEBOL">Futebol</OPTION>
+<OPTION VALUE="BASQUETE">Basquete</OPTION>
+</SELECT><BR><BR>Deixe seus comentários:<BR>
+<TEXTAREA NAME="COMENTARIOS" ROWS=5 COLS=30>
+</TEXTAREA><BR><BR> <!-- uma caixinha de texto que o usuario pode escrever, ele pode aumentar se quiser -->
+<INPUT TYPE="SUBMIT" VALUE="Enviar">
+<INPUT TYPE="RESET" VALUE="Limpar">
+</FORM></BODY></HTML>

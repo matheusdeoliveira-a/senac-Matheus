@@ -1,0 +1,41 @@
+<!doctype html><html>
+<head><meta charset="utf-8">
+<title>IF Decisão Condicional - Lógica de Programação com JavaScript</title>
+</head><body>
+<h1>IF Decisão Condicional - Lógica de Programação com JavaScript</h1>
+<p>Sintaxe de if simples, apenas com o verdadeiro: if(condição) {ação verdadeiro};</p>
+<p>Sintaxe de if composta, com verdadeiro e falso; if(condição) {ação verdadeiro} else {ação falso};</p>
+<script>
+/* Bloco de comentários
+if (5>3) {
+	alert("maior")
+	};
+*/
+/*
+if (5>3) {
+	alert("maior")
+	} else{
+		alert("menor")
+		};
+*/
+/*
+var n1 = parseFloat(prompt("Digite um número"));
+var n2 = parseFloat(prompt("Digite mais um número"));
+var media = (n1 + n2) / 2;
+if(media > 5){
+	alert("Parabéns! Você foi aprovado.");
+	}else{
+		alert("Desculpe, mas não foi dessa vez.");
+*/
+var n1 = parseFloat(prompt("Digite a nota do 1° Bimestre"));
+var n2 = parseFloat(prompt("Digite a nota do 2° Bimestre"));
+var n3 = parseFloat(prompt("Digite a nota do 3° Bimestre"));
+var n4 = parseFloat(prompt("Digite a nota do 4° Bimestre"));
+var media = (n1 + n2 + n3 + n4) / 4;
+if(media > 5){
+alert("Aprovado. Boas férias! Sua média foi " + media);
+} else if((media == 5) || (media == 4)) { // E se for esse valor
+alert("Recuperação! Sua média foi " + media);
+} else{
+alert("REPROVADO!!! Sua média foi " + media);
+};</script></body></html>

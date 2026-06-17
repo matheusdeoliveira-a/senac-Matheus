@@ -1,0 +1,15 @@
+body {background-color:red;} /* Isso aqui é o responsivo */
+/*Mobile / Tablet*/
+@media screen and (max-width: 756px) {
+    body {
+        background-color:blue;
+    }
+}
+/*desktop*/
+@media screen and (min-width: 757px) {
+    body {
+        background-color: green;
+    }
+}
+/*Quando for mobile sumir o menu
+Sumir as Laterais e cetrlizar o Aprendendo HTML */
